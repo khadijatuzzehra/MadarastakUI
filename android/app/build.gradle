@@ -102,6 +102,12 @@ android {
         versionName "1.0"
     }
 
+    project.ext.vectoricons = [
+    iconFontNames: ['Montserrat-VariableFont_wght.ttf','Montserrat-Bold.ttf','Montserrat-SemiBold.ttf','Montserrat-Regular.ttf', 'Lato-Regular.ttf','Questv1 Regular.ttf']
+    ]
+    apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+
     splits {
         abi {
             reset()
