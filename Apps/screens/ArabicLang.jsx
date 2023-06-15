@@ -19,7 +19,7 @@ const ArabicLang = () => {
   const navigation = useNavigation();
 
   const handleLanguageSelection = language => {
-    navigation.navigate('Login', {language});
+    navigation.navigate('ArabicLogin', {language});
   };
 
   return (

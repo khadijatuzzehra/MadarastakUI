@@ -13,6 +13,7 @@ import FirstScreen from './Apps/screens/FirstScreen';
 import Language from './Apps/screens/Language';
 import ArabicLang from './Apps/screens/ArabicLang';
 import Login from './Apps/screens/Login';
+import ArabicLogin from './Apps/screens/ArabicLogin';
 import TabStack from './Apps/screens/TabStack';
 
 const Stack = createStackNavigator();
@@ -28,6 +29,7 @@ function App() {
         <Stack.Screen name="Language" component={Language} />
         <Stack.Screen name="ArabicLang" component={ArabicLang} />
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="ArabicLogin" component={ArabicLogin} />
         <Stack.Screen name="TabStack" component={TabStack} />
       </Stack.Navigator>
     </NavigationContainer>

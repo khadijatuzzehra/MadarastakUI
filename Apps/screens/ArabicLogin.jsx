@@ -15,7 +15,7 @@ import Vector from '../../assets/svgs/Group84.svg';
 import Globe from '../../assets/globe.png';
 import Lock from '../../assets/Lock.png';
 
-const Login = () => {
+const ArabicLogin = () => {
   const route = useRoute();
   const {language} = route.params;
   console.log(language);
@@ -34,7 +34,7 @@ const Login = () => {
           <Image source={Globe} style={styles.inputImage} />
           <TextInput
             style={styles.input}
-            placeholder="Enter your E-mail"
+            placeholder="أدخل بريدك الإلكتروني"
             placeholderTextColor="#999999"
           />
         </View>
@@ -42,19 +42,19 @@ const Login = () => {
           <Image source={Lock} style={styles.inputImage} />
           <TextInput
             style={styles.input}
-            placeholder="Enter your password"
+            placeholder="أدخل بريدك الإلكتروني"
             placeholderTextColor="#999999"
           />
         </View>
         <TouchableOpacity style={styles.LoginBtn}>
-          <Text style={styles.btnText}>Login</Text>
+          <Text style={styles.btnText}>تسجيل الدخول</Text>
         </TouchableOpacity>
         <View style={styles.row}>
-          <Text style={styles.text}>Don't have an account? </Text>
-          <Text style={styles.textBottom}> Please contact your school</Text>
+          <Text style={styles.text}>ليس لديك حساب؟</Text>
+          <Text style={styles.textBottom}>يرجى الاتصال بمدرستك</Text>
         </View>
         <TouchableOpacity style={styles.LoginBtn2}>
-          <Text style={styles.btnText2}>Login as teacher</Text>
+          <Text style={styles.btnText2}>تسجيل الدخول كمدرس</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.bottom}>
@@ -78,19 +78,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   row: {
-    flexDirection: 'row',
+    flexDirection: 'row-reverse',
     alignItems: 'center',
     justifyContent: 'center',
   },
   text: {
     color: '#226CA3',
     lineHeight: 50,
-    fontSize: 11,
-    fontFamily: 'Montserrat-SemiBold',
+    fontSize: 13,
+    fontFamily: 'Questv1 Regular',
   },
   textBottom: {
     color: '#4FC4D8',
-    fontFamily: 'Montserrat-Regular',
+    fontFamily: 'Questv1 Regular',
     fontSize: 11,
   },
 
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     width: 190,
   },
   TextInput: {
-    flexDirection: 'row',
+    flexDirection: 'row-reverse',
     alignItems: 'center',
     width: '78%',
     borderRadius: 10,
@@ -133,10 +133,10 @@ const styles = StyleSheet.create({
   inputImage: {
     width: 20,
     height: 20,
-    marginRight: 10,
+    marginLeft: 12,
   },
   input: {
-    fontFamily: 'Montserrat-Regular',
+    fontFamily: 'Questv1 Regular',
     color: 'gray',
     width: '80%',
   },
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
   btnText: {
     color: 'white',
     fontSize: 14,
-    fontFamily: 'Montserrat-Regular',
+    fontFamily: 'Questv1 Regular',
   },
   LoginBtn2: {
     alignItems: 'center',
@@ -168,8 +168,8 @@ const styles = StyleSheet.create({
   btnText2: {
     color: '#4FC4D8',
     fontSize: 14,
-    fontFamily: 'Montserrat-Regular',
+    fontFamily: 'Questv1 Regular',
   },
 });
 
-export default Login;
+export default ArabicLogin;

@@ -19,7 +19,11 @@ const Language = () => {
   const navigation = useNavigation();
 
   const handleLanguageSelection = language => {
-    navigation.navigate('Login', {language});
+    if (language === 'English') {
+      navigation.navigate('Login', {language});
+    } else {
+      navigation.navigate('ArabicLogin', {language});
+    }
   };
 
   return (
