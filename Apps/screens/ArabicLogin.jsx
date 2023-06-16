@@ -46,7 +46,9 @@ const ArabicLogin = () => {
             placeholderTextColor="#999999"
           />
         </View>
-        <TouchableOpacity style={styles.LoginBtn}>
+        <TouchableOpacity
+          style={styles.LoginBtn}
+          onPress={() => handleLogin('Arabic')}>
           <Text style={styles.btnText}>تسجيل الدخول</Text>
         </TouchableOpacity>
         <View style={styles.row}>

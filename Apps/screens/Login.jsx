@@ -46,7 +46,9 @@ const Login = () => {
             placeholderTextColor="#999999"
           />
         </View>
-        <TouchableOpacity style={styles.LoginBtn}>
+        <TouchableOpacity
+          style={styles.LoginBtn}
+          onPress={() => handleLogin('English')}>
           <Text style={styles.btnText}>Login</Text>
         </TouchableOpacity>
         <View style={styles.row}>

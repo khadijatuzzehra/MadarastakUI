@@ -20,6 +20,14 @@
 		A397DDB739A747278E2C33E3 /* Questv1 Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9345A260CB24EC7B51C262B /* Questv1 Regular.ttf */; };
 		45C5E2A3370841EE99D84F7B /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D45F30AAB17E413BABB9457E /* Montserrat-Bold.ttf */; };
 		ED9D28CA9F6A41EE8CAFF6B7 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C35DE73AE9444E94D0170F /* Montserrat-SemiBold.ttf */; };
+		F4F8476DB72F4055B3CD45BB /* apps-outline.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7F94E76112AB44F5BB783AAB /* apps-outline.svg */; };
+		43B4081E887A4DBB99A85C39 /* apps.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8668D8C8F86249A5883BBDFB /* apps.svg */; };
+		48F0C7F5835E4EC7A86470BC /* home-outline.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0F1830F6DBD94BAE864B17AF /* home-outline.svg */; };
+		65373C0BE10548958F0B7C57 /* home.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0D60919715A240729ACE8CB2 /* home.svg */; };
+		7115BE6CF468415ABEECB67B /* notifications-outline.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9411486C8EA54AA18FE5B56E /* notifications-outline.svg */; };
+		96E47A9B6FF24BE6BD4171D9 /* notifications.svg in Resources */ = {isa = PBXBuildFile; fileRef = 47BBE18B7D574AD89F7A688E /* notifications.svg */; };
+		99F8F79B90B44588A447B428 /* person-circle-outline.svg in Resources */ = {isa = PBXBuildFile; fileRef = F82EF2235FB4483088DF0366 /* person-circle-outline.svg */; };
+		3B0859E737654E6C84995923 /* person-circle.svg in Resources */ = {isa = PBXBuildFile; fileRef = B702C95188414F3FBCF14A2D /* person-circle.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,14 @@
 		D9345A260CB24EC7B51C262B /* Questv1 Regular.ttf */ = {isa = PBXFileReference; name = "Questv1 Regular.ttf"; path = "../assets/fonts/Questv1 Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		D45F30AAB17E413BABB9457E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		D7C35DE73AE9444E94D0170F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7F94E76112AB44F5BB783AAB /* apps-outline.svg */ = {isa = PBXFileReference; name = "apps-outline.svg"; path = "../assets/fonts/apps-outline.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8668D8C8F86249A5883BBDFB /* apps.svg */ = {isa = PBXFileReference; name = "apps.svg"; path = "../assets/fonts/apps.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0F1830F6DBD94BAE864B17AF /* home-outline.svg */ = {isa = PBXFileReference; name = "home-outline.svg"; path = "../assets/fonts/home-outline.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0D60919715A240729ACE8CB2 /* home.svg */ = {isa = PBXFileReference; name = "home.svg"; path = "../assets/fonts/home.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9411486C8EA54AA18FE5B56E /* notifications-outline.svg */ = {isa = PBXFileReference; name = "notifications-outline.svg"; path = "../assets/fonts/notifications-outline.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		47BBE18B7D574AD89F7A688E /* notifications.svg */ = {isa = PBXFileReference; name = "notifications.svg"; path = "../assets/fonts/notifications.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F82EF2235FB4483088DF0366 /* person-circle-outline.svg */ = {isa = PBXFileReference; name = "person-circle-outline.svg"; path = "../assets/fonts/person-circle-outline.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B702C95188414F3FBCF14A2D /* person-circle.svg */ = {isa = PBXFileReference; name = "person-circle.svg"; path = "../assets/fonts/person-circle.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +186,14 @@
 				D9345A260CB24EC7B51C262B /* Questv1 Regular.ttf */,
 				D45F30AAB17E413BABB9457E /* Montserrat-Bold.ttf */,
 				D7C35DE73AE9444E94D0170F /* Montserrat-SemiBold.ttf */,
+				7F94E76112AB44F5BB783AAB /* apps-outline.svg */,
+				8668D8C8F86249A5883BBDFB /* apps.svg */,
+				0F1830F6DBD94BAE864B17AF /* home-outline.svg */,
+				0D60919715A240729ACE8CB2 /* home.svg */,
+				9411486C8EA54AA18FE5B56E /* notifications-outline.svg */,
+				47BBE18B7D574AD89F7A688E /* notifications.svg */,
+				F82EF2235FB4483088DF0366 /* person-circle-outline.svg */,
+				B702C95188414F3FBCF14A2D /* person-circle.svg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -277,6 +301,14 @@
 				A397DDB739A747278E2C33E3 /* Questv1 Regular.ttf in Resources */,
 				45C5E2A3370841EE99D84F7B /* Montserrat-Bold.ttf in Resources */,
 				ED9D28CA9F6A41EE8CAFF6B7 /* Montserrat-SemiBold.ttf in Resources */,
+				F4F8476DB72F4055B3CD45BB /* apps-outline.svg in Resources */,
+				43B4081E887A4DBB99A85C39 /* apps.svg in Resources */,
+				48F0C7F5835E4EC7A86470BC /* home-outline.svg in Resources */,
+				65373C0BE10548958F0B7C57 /* home.svg in Resources */,
+				7115BE6CF468415ABEECB67B /* notifications-outline.svg in Resources */,
+				96E47A9B6FF24BE6BD4171D9 /* notifications.svg in Resources */,
+				99F8F79B90B44588A447B428 /* person-circle-outline.svg in Resources */,
+				3B0859E737654E6C84995923 /* person-circle.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
