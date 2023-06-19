@@ -34,27 +34,27 @@ const TabStack = ({route}) => {
           if (route.name === 'Home') {
             console.log('hello');
             return focused ? (
-              <Icon name="home" size={55} color="#226CA3" />
+              <Icon name="home" size={30} color="#226CA3" />
             ) : (
-              <Icon name="home-outline" size={55} color="gray" />
+              <Icon name="home-outline" size={30} color="gray" />
             );
           } else if (route.name === 'FillScreen') {
             return focused ? (
-              <Icon name="apps" size={55} color="#226CA3" />
+              <Icon name="apps" size={30} color="#226CA3" />
             ) : (
-              <Icon name="apps-outline" size={55} color="gray" />
+              <Icon name="apps-outline" size={30} color="gray" />
             );
           } else if (route.name === 'FillScreen2') {
             return focused ? (
-              <Icon name="notifications" size={55} color="#226CA3" />
+              <Icon name="notifications" size={30} color="#226CA3" />
             ) : (
-              <Icon name="notifications-outline" size={55} color="gray" />
+              <Icon name="notifications-outline" size={30} color="gray" />
             );
           } else if (route.name === 'Profile') {
             return focused ? (
-              <Icon name="person-circle" size={55} color="#226CA3" />
+              <Icon name="person-circle" size={30} color="#226CA3" />
             ) : (
-              <Icon name="person-circle-outline" size={55} color="gray" />
+              <Icon name="person-circle-outline" size={30} color="gray" />
             );
           }
           // You can return any component that you like here!
@@ -63,7 +63,7 @@ const TabStack = ({route}) => {
               name={iconName}
               size={size}
               color={color}
-              style={{margin: 20}}
+              style={{margin: 10}}
             />
           );
         },
@@ -78,7 +78,7 @@ const TabStack = ({route}) => {
           backgroundColor: 'white',
         },
         tabBarLabelStyle: {
-          paddingBottom: 20,
+          paddingBottom: 8,
         },
       })}>
       <Tab.Screen
@@ -91,6 +91,7 @@ const TabStack = ({route}) => {
           headerBackTitleVisible: false,
           headerTitleAlign: 'center',
           title: 'Home',
+          tabBarLabel: '',
         }}
       />
       <Tab.Screen
@@ -101,6 +102,7 @@ const TabStack = ({route}) => {
           headerBackTitleVisible: false,
           headerTitleAlign: 'center',
           title: 'FillScreen',
+          tabBarLabel: '',
         }}
       />
       <Tab.Screen
@@ -111,6 +113,7 @@ const TabStack = ({route}) => {
           headerBackTitleVisible: false,
           headerTitleAlign: 'center',
           title: 'FillScreen2',
+          tabBarLabel: '',
         }}
       />
       <Tab.Screen
@@ -123,6 +126,7 @@ const TabStack = ({route}) => {
           headerBackTitleVisible: false,
           headerTitleAlign: 'center',
           title: 'Profile',
+          tabBarLabel: '',
         }}
       />
     </Tab.Navigator>
