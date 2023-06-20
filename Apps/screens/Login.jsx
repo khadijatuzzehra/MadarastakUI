@@ -18,11 +18,9 @@ import Lock from '../../assets/Lock.png';
 const Login = () => {
   const route = useRoute();
   const {language} = route.params;
-  console.log(language);
   const navigation = useNavigation();
 
   const handleLogin = language => {
-    console.log('Function call to handle login');
     navigation.navigate('TabStack', {language});
   };
 

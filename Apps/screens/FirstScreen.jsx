@@ -6,7 +6,6 @@ const FirstScreen = () => {
   const navigation = useNavigation();
 
   const handleLogin = language => {
-    console.log('Function call to handle login');
     if (language === 'English') {
       navigation.navigate('Language', {language});
     }

@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import {View, Text, TouchableOpacity, StyleSheet, Image} from 'react-native';
+//Using react-native-paper searchbar
 import {Searchbar, DefaultTheme} from 'react-native-paper';
+
 import Icon from 'react-native-vector-icons/Ionicons';
 import Logo from '../../assets/svgs/Clip path group.svg';
+import User from '../../assets/svgs/user.png';
 import Vector from '../../assets/svgs/Group 161.svg';
-
 import Homework from '../../assets/svgs/Homeworks.svg';
 import Timetable from '../../assets/svgs/Timetable.svg';
 import Exams from '../../assets/svgs/Exams.svg';
@@ -35,7 +37,7 @@ function EnglishHomeScreen() {
           />
         </View>
         <View style={styles.overlay}>
-          <Logo style={styles.profilePicture} />
+          <Image style={styles.profilePicture} source={User} />
         </View>
       </View>
 
@@ -99,7 +101,8 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   profilePicture: {
-    height: 150,
+    height: 70,
+    width: 70,
     marginLeft: 250,
     borderRadius: 75,
     borderWidth: 2,

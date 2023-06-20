@@ -4,15 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-// import Home from '../../assets/Icons/home.svg';
-// import HomeOutline from '../../assets/Icons/home-outline.svg';
-// import Apps from '../../assets/Icons/apps.svg';
-// import AppsOutline from '../../assets/Icons/apps-outline.svg';
-// import Alert from '../../assets/Icons/notifications.svg';
-// import AlertOutline from '../../assets/Icons/notifications-outline.svg';
-// import Pf from '../../assets/Icons/person-circle.svg';
-// import PfOutline from '../../assets/Icons/person-circle-outline.svg';
-
+//Screens import for tab navigations
 import EnglishHomeScreen from './EnglishHomeScreen';
 import ArabicHomeScreen from './ArabicHomeScreen';
 import EnglishProfileScreen from './EnglishProfileScreen';
@@ -23,6 +15,7 @@ import FillScreen2 from './FillScreen2';
 const Tab = createBottomTabNavigator();
 
 const TabStack = ({route}) => {
+  //Receiving arguments from navigation
   const {language} = route.params;
 
   return (
@@ -30,9 +23,8 @@ const TabStack = ({route}) => {
       screenOptions={({route}) => ({
         tabBarIcon: ({focused, color, size}) => {
           let iconName;
-
+          //Conditional statements for icons
           if (route.name === 'Home') {
-            console.log('hello');
             return focused ? (
               <Icon name="home" size={30} color="#226CA3" />
             ) : (
@@ -81,6 +73,7 @@ const TabStack = ({route}) => {
           paddingBottom: 8,
         },
       })}>
+      {/* Conditional Navigation based on language settings */}
       <Tab.Screen
         name="Home"
         component={

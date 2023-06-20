@@ -1,8 +1,24 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Image, StyleSheet} from 'react-native';
+import Img from '../../assets/svgs/download.png';
 
 function FillScreen() {
-  return <Text>Hello</Text>;
+  return (
+    <View style={styles.container}>
+      <Image source={Img} style={{height: 500, width: 500}} />
+    </View>
+  );
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  image: {
+    height: 500,
+    width: 500,
+  },
+});
 export default FillScreen;

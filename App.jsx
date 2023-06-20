@@ -6,9 +6,10 @@
  */
 
 import React from 'react';
-import {StyleSheet, Text, View, Button} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+
+//Import All screens required for StackNavigator from screens folder
 import FirstScreen from './Apps/screens/FirstScreen';
 import Language from './Apps/screens/Language';
 import ArabicLang from './Apps/screens/ArabicLang';
@@ -20,6 +21,7 @@ const Stack = createStackNavigator();
 
 function App() {
   return (
+    //Navigator and Navigation Handled
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
@@ -35,20 +37,5 @@ function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    flex: 1,
-    marginTop: 32,
-    paddingHorizontal: 24,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: 'white',
-  },
-});
 
 export default App;

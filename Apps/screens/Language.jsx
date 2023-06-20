@@ -8,6 +8,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+
+//Import Images and svgs from folder
 import Vector2 from '../../assets/Group91.png';
 import English from '../../assets/English.png';
 import Arabic from '../../assets/Arabic.png';
@@ -19,6 +21,7 @@ const Language = () => {
   const navigation = useNavigation();
 
   const handleLanguageSelection = language => {
+    //Languages selection used for further navigation
     if (language === 'English') {
       navigation.navigate('Login', {language});
     } else {
@@ -61,6 +64,7 @@ const Language = () => {
   );
 };
 
+//Stylesheet for styling purposes
 const styles = StyleSheet.create({
   container: {
     flex: 1,
