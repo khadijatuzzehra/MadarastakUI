@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     marginTop: 80,
     height: 80,
     marginBottom: '20%',
-    width: 190,
+    width: '100%',
   },
   TextInput: {
     flexDirection: 'row-reverse',

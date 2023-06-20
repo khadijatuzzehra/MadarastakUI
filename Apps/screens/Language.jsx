@@ -17,6 +17,8 @@ import Logo from '../../assets/svgs/Group91.svg';
 import Font from '../../assets/svgs/G1.svg';
 import Vector from '../../assets/svgs/Group84.svg';
 
+import dim from '../../utils/dim';
+
 const Language = () => {
   const navigation = useNavigation();
 
@@ -72,12 +74,12 @@ const styles = StyleSheet.create({
   },
   top: {
     flex: 1,
-    marginHorizontal: 60,
-    marginTop: 300,
+    marginHorizontal: (60 / dim.w) * dim.Width,
+    marginTop: (250 / dim.w) * dim.Width,
   },
   text: {
     color: '#226CA3',
-    lineHeight: 50,
+    lineHeight: 30,
     fontSize: 16,
     fontFamily: 'Montserrat-SemiBold',
   },
@@ -95,17 +97,17 @@ const styles = StyleSheet.create({
   },
   options: {
     flexDirection: 'row',
-    marginHorizontal: 2,
+    marginHorizontal: (5 / dim.w) * dim.Width,
   },
   btn: {
     backgroundColor: '#F1F5FF',
     marginTop: 20,
-    width: 140,
     marginRight: 10,
-    height: 60,
     borderRadius: 15,
+    width: (135 / dim.w) * dim.Width,
+    height: (48 / dim.h) * dim.Height,
     justifyContent: 'center',
-    paddingHorizontal: 20,
+    paddingHorizontal: (10 / dim.w) * dim.Width,
   },
   btnContent: {
     flexDirection: 'row',
