@@ -9,6 +9,7 @@ import Homework from '../../assets/svgs/Homeworks.svg';
 import Timetable from '../../assets/svgs/Timetable.svg';
 import Exams from '../../assets/svgs/Exams.svg';
 import Fee from '../../assets/svgs/Fee.svg';
+import dim from '../../utils/dim';
 
 function ArabicHomeScreen() {
   const [searchQuery, setSearchQuery] = React.useState('');
@@ -96,13 +97,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row-reverse',
     position: 'relative',
     backgroundColor: '#226CA3',
-    height: '32%',
-    width: '100%',
+    height: (220 / dim.w) * dim.Width,
+    width: dim.Width,
   },
   profilePicture: {
-    height: 70,
-    width: 70,
-    marginRight: 250,
+    height: (60 / dim.w) * dim.Width,
+    width: (60 / dim.w) * dim.Width,
+    marginRight: (200 / dim.w) * dim.Width,
     borderRadius: 75,
     borderWidth: 2,
     borderColor: 'white',
@@ -125,12 +126,12 @@ const styles = StyleSheet.create({
     fontStyle: 'normal',
   },
   image: {
-    height: '20%',
-    width: '90%',
+    height: (40 / dim.w) * dim.Width,
+    width: dim.Width / 2,
   },
   overlay: {
     position: 'absolute',
-    top: '20%',
+    top: (40 / dim.w) * dim.Width,
     left: 0,
     right: 0,
     justifyContent: 'center',
@@ -138,18 +139,18 @@ const styles = StyleSheet.create({
   },
   overlay2: {
     position: 'absolute',
-    top: '20%',
-    marginRight: '10%',
-    alignItems: 'flex-end',
+    top: (40 / dim.w) * dim.Width,
+    marginRight: (35 / dim.w) * dim.Width,
+    alignItems: 'flex-start',
   },
   vector: {
     alignItems: 'flex-end',
   },
   searchBar: {
     position: 'absolute',
-    marginTop: '40%',
-    marginHorizontal: '8%',
-    width: '90%',
+    marginTop: (160 / dim.w) * dim.Width,
+    marginHorizontal: (20 / dim.w) * dim.Width,
+    width: dim.Width - 60,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -157,8 +158,8 @@ const styles = StyleSheet.create({
     height: 45,
     fontFamily: 'Questv1 Regular',
     fontSize: 14,
-    paddingBottom: 25,
-    marginLeft: '50%',
+    marginLeft: (dim.Width - 60) / 2,
+    paddingBottom: (25 / dim.w) * dim.Width,
   },
   searchBarStyle: {
     height: 40,
@@ -172,12 +173,12 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 40,
   },
   content: {
-    marginHorizontal: '5%',
+    marginHorizontal: (20 / dim.w) * dim.Width,
   },
   textAlignment: {
-    marginTop: '8%',
     flexDirection: 'row-reverse',
-    marginHorizontal: '10%',
+    marginTop: (25 / dim.w) * dim.Width,
+    marginHorizontal: (25 / dim.w) * dim.Width,
   },
   textAlignment1: {
     color: 'black',
@@ -186,30 +187,30 @@ const styles = StyleSheet.create({
   textAlignment2: {
     color: 'gray',
     fontFamily: 'Questv1 Regular',
-    marginRight: '40%',
+    marginRight: (140 / dim.w) * dim.Width,
   },
   textAlignment3: {
     color: 'black',
     fontFamily: 'Questv1 Regular',
     fontSize: 14,
-    margin: 3,
+    margin: (2 / dim.w) * dim.Width,
   },
   textAlignment4: {
     color: '#00A4C4',
     fontFamily: 'Questv1 Regular',
     fontSize: 10,
-    margin: 3,
+    margin: (2 / dim.w) * dim.Width,
     textAlign: 'center',
   },
   rows: {
     flexDirection: 'row',
-    margin: '1%',
+    margin: (2 / dim.w) * dim.Width,
   },
   btn: {
-    height: 220,
-    width: 170,
+    height: (200 / dim.w) * dim.Width,
+    width: (160 / dim.w) * dim.Width,
     backgroundColor: '#F1F5FF',
-    margin: 8,
+    margin: (8 / dim.w) * dim.Width,
     flexDirection: 'column',
     borderRadius: 20,
     justifyContent: 'center',

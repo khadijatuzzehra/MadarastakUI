@@ -6,10 +6,7 @@ import User from '../../assets/svgs/user.png';
 import Vector from '../../assets/svgs/Group 161.svg';
 import Verified from '../../assets/svgs/verified.png';
 
-import Homework from '../../assets/svgs/Homeworks.svg';
-import Timetable from '../../assets/svgs/Timetable.svg';
-import Exams from '../../assets/svgs/Exams.svg';
-import Fee from '../../assets/svgs/Fee.svg';
+import dim from '../../utils/dim';
 
 function EnglishProfileScreen() {
   const [searchQuery, setSearchQuery] = React.useState('');
@@ -87,29 +84,29 @@ const styles = StyleSheet.create({
   profileContainer: {
     position: 'relative',
     backgroundColor: '#F1F5FF',
-    height: '32%',
-    width: '100%',
+    height: (220 / dim.w) * dim.Width,
+    width: dim.Width,
   },
   profilePicture: {
-    height: 120,
-    width: 120,
+    height: (100 / dim.w) * dim.Width,
+    width: (100 / dim.w) * dim.Width,
     borderRadius: 75,
     borderWidth: 2,
     borderColor: 'white',
   },
   verified: {
     position: 'absolute',
-    marginLeft: '60%',
-    marginTop: '33%',
-    height: 30,
-    width: 30,
+    marginLeft: (1 / dim.w) * dim.Width,
+    marginTop: (2 / dim.w) * dim.Width,
+    height: (20 / dim.w) * dim.Width,
+    width: (20 / dim.w) * dim.Width,
   },
   verifiedView: {
     position: 'absolute',
-    height: 36,
-    width: 36,
-    marginLeft: 280,
-    marginTop: 159,
+    height: (20 / dim.w) * dim.Width,
+    width: (20 / dim.w) * dim.Width,
+    marginLeft: (260 / dim.w) * dim.Width,
+    marginTop: (150 / dim.w) * dim.Width,
   },
   text: {
     color: '#4FC4D8',
@@ -125,12 +122,12 @@ const styles = StyleSheet.create({
   LoginBtn: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: '85%',
-    height: 50,
+    width: dim.Width - 60,
+    height: (50 / dim.w) * dim.Width,
     borderRadius: 10,
     backgroundColor: '#4FC4D8',
-    marginHorizontal: '8%',
-    marginVertical: '5%',
+    marginHorizontal: (30 / dim.w) * dim.Width,
+    marginVertical: (20 / dim.w) * dim.Width,
   },
   btnText: {
     color: 'white',
@@ -149,14 +146,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   overlay: {
-    top: '20%',
+    top: (50 / dim.w) * dim.Width,
     left: 0,
     right: 0,
     justifyContent: 'center',
     alignItems: 'center',
   },
   overlay2: {
-    top: '20%',
+    top: (50 / dim.w) * dim.Width,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -167,9 +164,9 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 40,
   },
   textAlignment: {
-    marginTop: '8%',
-    marginHorizontal: '9%',
-    marginVertical: '5%',
+    marginTop: (20 / dim.w) * dim.Width,
+    marginHorizontal: (30 / dim.w) * dim.Width,
+    marginVertical: (20 / dim.w) * dim.Width,
     fontFamily: 'Montserrat-SemiBold',
     fontSize: 14,
     color: 'black',
@@ -178,28 +175,22 @@ const styles = StyleSheet.create({
     color: '#44FFFF',
     fontFamily: 'Montserrat-SemiBold',
     fontSize: 10,
-    margin: 8,
+    margin: (10 / dim.w) * dim.Width,
     textAlign: 'center',
   },
   infoBox: {
-    flexDirection: 'row',
+    flexDirection: 'row-reverse',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginHorizontal: '8%',
-    marginVertical: '1%',
-    padding: '3%',
-    width: '85%',
-    height: 45,
+    marginHorizontal: (30 / dim.w) * dim.Width,
+    marginVertical: (5 / dim.w) * dim.Width,
+    padding: (5 / dim.w) * dim.Width,
+    width: dim.Width - 60,
+    borderRadius: 10,
+    height: (40 / dim.w) * dim.Width,
     backgroundColor: '#F1F5FF',
   },
-  leftContainer: {
-    flex: 1,
-    justifyContent: 'flex-start',
-  },
-  rightContainer: {
-    flex: 1,
-    justifyContent: 'flex-end',
-  },
+
   textAlignment2: {
     color: 'black',
     fontFamily: 'Montserrat-SemiBold',

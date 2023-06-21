@@ -20,7 +20,11 @@ const ArabicLang = () => {
   const navigation = useNavigation();
 
   const handleLanguageSelection = language => {
-    navigation.navigate('ArabicLogin', {language});
+    if (language === 'English') {
+      navigation.navigate('Login', {language});
+    } else {
+      navigation.navigate('ArabicLogin', {language});
+    }
   };
 
   return (
@@ -78,31 +82,27 @@ const styles = StyleSheet.create({
     color: '#333333',
     fontFamily: 'Questv1 Regular',
     fontSize: 13,
-    fontWeight: '400',
   },
   textButton: {
     color: '#226CA3',
     fontFamily: 'Questv1 Regular',
     fontSize: 14,
     marginLeft: 4,
-    fontStyle: 'normal',
   },
   textButton2: {
     color: '#226CA3',
     fontFamily: 'Montserrat-SemiBold',
     fontSize: 14,
-    fontStyle: 'normal',
   },
   options: {
     flexDirection: 'row',
-    marginHorizontal: (5 / dim.w) * dim.Width,
   },
   btn: {
     backgroundColor: '#F1F5FF',
-    marginTop: 20,
-    width: (135 / dim.w) * dim.Width,
+    marginTop: (15 / dim.h) * dim.Height,
+    width: (130 / dim.w) * dim.Width,
     height: (48 / dim.h) * dim.Height,
-    marginRight: 10,
+    marginRight: (15 / dim.h) * dim.Height,
     borderRadius: 15,
     justifyContent: 'center',
     paddingHorizontal: (10 / dim.w) * dim.Width,
@@ -112,37 +112,37 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   icon: {
-    height: 20,
-    width: 20,
-    marginRight: 10,
+    height: (15 / dim.h) * dim.Height,
+    width: (15 / dim.h) * dim.Height,
+    marginRight: (8 / dim.h) * dim.Height,
     borderRadius: 5,
   },
   bottom: {
-    width: '100%',
+    width: dim.Width,
     alignItems: 'center',
   },
   image: {
-    height: 300,
-    width: '100%',
+    height: (100 / dim.h) * dim.Height,
+    width: dim.Width,
   },
   overlay: {
     position: 'absolute',
-    top: '30%',
+    marginTop: (60 / dim.h) * dim.Height,
     left: 0,
     right: 0,
     justifyContent: 'center',
     alignItems: 'center',
   },
   overlayImage2: {
-    marginTop: 50,
-    height: 80,
-    width: 190,
-    marginLeft: 270,
+    marginTop: (25 / dim.h) * dim.Height,
+    height: (80 / dim.h) * dim.Height,
+    width: (80 / dim.h) * dim.Height,
+    marginLeft: dim.Width / 2 + dim.Height / 20,
   },
   overlayImage: {
-    marginTop: 50,
-    height: 80,
-    width: 190,
+    marginTop: (25 / dim.h) * dim.Height,
+    height: (80 / dim.h) * dim.Height,
+    width: (80 / dim.h) * dim.Height,
   },
 });
 

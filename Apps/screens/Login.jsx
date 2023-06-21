@@ -7,6 +7,9 @@ import {
   StyleSheet,
   TextInput,
   TouchableOpacity,
+  ScrollView,
+  KeyboardAvoidingView,
+  Platform,
 } from 'react-native';
 import {useNavigation, useRoute} from '@react-navigation/native';
 import Logo from '../../assets/svgs/Logo.svg';
@@ -14,6 +17,7 @@ import LogoCom from '../../assets/svgs/Group91.svg';
 import Vector from '../../assets/svgs/Group84.svg';
 import Globe from '../../assets/globe.png';
 import Lock from '../../assets/Lock.png';
+import dim from '../../utils/dim';
 
 const Login = () => {
   const route = useRoute();
@@ -25,7 +29,9 @@ const Login = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView
+      contentContainerStyle={styles.container}
+      keyboardShouldPersistTaps="handled">
       <View style={styles.top}>
         <Logo style={styles.overlayImage2} />
         <View style={styles.TextInput}>
@@ -63,13 +69,13 @@ const Login = () => {
           <LogoCom style={styles.overlayImage} />
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     backgroundColor: 'white',
   },
   top: {
@@ -93,63 +99,62 @@ const styles = StyleSheet.create({
     fontFamily: 'Montserrat-Regular',
     fontSize: 11,
   },
-
   bottom: {
-    width: '100%',
+    width: dim.Width,
     alignItems: 'center',
     justifyContent: 'center',
   },
   image: {
-    height: 300,
-    width: '100%',
+    height: (100 / dim.h) * dim.Height,
+    width: dim.Width,
   },
   overlay: {
     position: 'absolute',
-    top: '30%',
+    marginTop: (60 / dim.h) * dim.Height,
     left: 0,
     right: 0,
     justifyContent: 'center',
     alignItems: 'center',
   },
   overlayImage: {
-    marginTop: 50,
-    height: 80,
-    width: 190,
+    marginTop: (25 / dim.h) * dim.Height,
+    height: (80 / dim.h) * dim.Height,
+    width: (80 / dim.h) * dim.Height,
   },
   overlayImage2: {
-    marginTop: 80,
-    height: 80,
-    marginBottom: '20%',
-    width: 190,
+    marginTop: (100 / dim.h) * dim.Height,
+    marginBottom: (35 / dim.h) * dim.Height,
+    height: (80 / dim.h) * dim.Height,
+    width: (80 / dim.h) * dim.Height,
   },
   TextInput: {
     flexDirection: 'row',
     alignItems: 'center',
-    width: '78%',
+    width: (310 / dim.h) * dim.Height,
     borderRadius: 10,
     backgroundColor: '#F1F5FF',
-    paddingHorizontal: '2%',
-    marginBottom: '5%',
+    paddingHorizontal: (10 / dim.h) * dim.Height,
+    marginBottom: (20 / dim.h) * dim.Height,
   },
   inputImage: {
-    width: 20,
-    height: 20,
-    marginRight: 10,
+    width: (20 / dim.h) * dim.Height,
+    height: (20 / dim.h) * dim.Height,
+    marginRight: (10 / dim.h) * dim.Height,
   },
   input: {
     fontFamily: 'Montserrat-Regular',
     color: 'gray',
-    width: '80%',
+    width: (310 / dim.h) * dim.Height,
   },
   LoginBtn: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: '78%',
-    height: 50,
+    width: (310 / dim.h) * dim.Height,
+    height: (50 / dim.h) * dim.Height,
     borderRadius: 10,
     backgroundColor: '#4FC4D8',
-    paddingHorizontal: '2%',
-    marginBottom: '5%',
+    paddingHorizontal: (10 / dim.h) * dim.Height,
+    marginBottom: (20 / dim.h) * dim.Height,
   },
   btnText: {
     color: 'white',
@@ -159,12 +164,12 @@ const styles = StyleSheet.create({
   LoginBtn2: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: '78%',
-    height: 50,
+    width: (310 / dim.h) * dim.Height,
+    height: (50 / dim.h) * dim.Height,
     borderRadius: 10,
     backgroundColor: '#F1F5FF',
-    paddingHorizontal: '2%',
-    marginVertical: '5%',
+    paddingHorizontal: (10 / dim.h) * dim.Height,
+    marginBottom: (20 / dim.h) * dim.Height,
   },
   btnText2: {
     color: '#4FC4D8',
